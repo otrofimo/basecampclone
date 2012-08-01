@@ -7,6 +7,7 @@ gem 'thin'
 group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
+  gem 'simplecov'
 end
 
 group :production do
@@ -23,6 +24,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
   gem 'twitter-bootstrap-rails'
   gem 'uglifier', '>= 1.0.3'
+  gem 'devise'
 end
 
 gem 'jquery-rails'

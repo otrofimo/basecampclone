@@ -1,0 +1,71 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/Users/apprentice/Desktop/basecampclone/app/models/user.rb": [
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/controllers/application_controller.rb": [
+        1,
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/helpers/projects_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/helpers/static_helper.rb": [
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/controllers/projects_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/models/project.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/Users/apprentice/Desktop/basecampclone/app/controllers/static_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1343864157
+  }
+}
