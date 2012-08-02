@@ -4,8 +4,12 @@ Basecampclone::Application.routes.draw do
 
   devise_for :users
 
-  resources :projects do
-    resources :lists 
+  resources :projects, :only => [:index, :show, :create] do
+    resources :lists, :only => [:show, :create]
+  end
+
+  resources :lists, :only => [] do
+    resources :tasks, :only => [:create]
   end
 
   

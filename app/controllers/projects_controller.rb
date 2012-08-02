@@ -18,6 +18,4 @@ class ProjectsController < ApplicationController
     redirect_to projects_path
   end
 
-  def edit
-  end
 end
