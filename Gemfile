@@ -8,6 +8,9 @@ group :development, :test do
 	gem 'sqlite3'
 	gem 'rspec-rails'
   gem 'simplecov'
+  gem 'fabrication'
+  gem 'ffaker'
+  gem 'capybara'
 end
 
 group :production do

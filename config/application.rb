@@ -61,5 +61,11 @@ module Basecampclone
 
     # Devise told us to do this
     config.assets.initialize_on_precompile = false
+
+    # For fabrication to work 
+    config.generators do |g|
+        g.test_framework      :rspec, :fixture => true
+        g.fixture_replacement :fabrication
+    end
   end
 end

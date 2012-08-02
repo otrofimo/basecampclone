@@ -50,6 +50,8 @@ GEM
     eventmachine (0.12.10)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    fabrication (2.2.1)
+    ffaker (1.15.0)
     hike (1.2.1)
     i18n (0.6.0)
     journey (1.0.4)
@@ -155,6 +157,8 @@ PLATFORMS
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
   devise
+  fabrication
+  ffaker
   jquery-rails
   pg
   quiet_assets
