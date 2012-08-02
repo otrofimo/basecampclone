@@ -9,6 +9,7 @@ class ProjectsController < ApplicationController
   def show
     @project = Project.find(params[:id])
     @lists = @project.lists
+    @list = List.new
   end
 
   def create

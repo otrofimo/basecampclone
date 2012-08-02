@@ -1,6 +1,8 @@
 require 'spec_helper'
 
 describe "LoginRoutings" do
+	subject { page }
+	let(:user) { Fabricate(:user) }
 
   describe "GET /" do
     it "guests should be routed to static#index" do

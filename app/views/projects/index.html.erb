@@ -16,13 +16,11 @@
 
 <div class="form-inline">
 <%=form_for @project do |f|%>
-	<%= f.text_field :title, :placeholder => "Add a list here..."%>
+	<%= f.text_field :title, :placeholder => "Add a project here..."%>
 	<span class="checkbox inline">
 	<%= f.check_box :clandestine %>
 	<%= f.label "private?", :class => "inline" %>
 	</span>
 	<p style="margin-top: 10px"><%= f.submit :class => "btn btn-danger"%></p>
-
-
 <%end%>
 </div>

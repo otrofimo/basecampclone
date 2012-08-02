@@ -1,6 +1,17 @@
 <h1>The Fucking <%= @project.title %></h1>
+<h3>This project has the following lists, or whatever:</h3>
 <div>	
-	<table>
+	<table class="table table-bordered table-striped">
+		<tr>
+			<th>
+				Title
+			</th>
+		</tr>
 		<%= render :partial => "list", :collection => @lists %>
 	</table>
 </div>
+<div class="form-inline">
+<%=form_for [@project,@list] do |f|%>
+	<%= f.text_field :title, :placeholder => "Add a list here..."%>
+	<p style="margin-top: 10px"><%= f.submit "Meh", :class => "btn btn-danger"%></p>
+<%end%>
