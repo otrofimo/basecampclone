@@ -1,2 +1,6 @@
-<h1>Projects#show</h1>
-<p>Find me in app/views/projects/show.html.erb</p>
+<h1>The Fucking <%= @project.title %></h1>
+<div>	
+	<table>
+		<%= render :partial => "list", :collection => @lists %>
+	</table>
+</div>
