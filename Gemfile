@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '3.2.6'
 gem 'thin'
+gem 'devise'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 group :development, :test do
@@ -27,7 +28,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
   gem 'twitter-bootstrap-rails'
   gem 'uglifier', '>= 1.0.3'
-  gem 'devise'
+
 end
 
 gem 'jquery-rails'
