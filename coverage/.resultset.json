@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/apprentice/Desktop/basecampclone/app/models/user.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/models/user.rb": [
         1,
         null,
         null,
@@ -15,32 +15,32 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/controllers/application_controller.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/controllers/application_controller.rb": [
         1,
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/helpers/application_helper.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/helpers/lists_helper.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/helpers/lists_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/helpers/projects_helper.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/helpers/projects_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/helpers/static_helper.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/helpers/static_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/helpers/tasks_helper.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/helpers/tasks_helper.rb": [
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/controllers/lists_controller.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/controllers/lists_controller.rb": [
         1,
         1,
         8,
@@ -61,7 +61,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/models/list.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/models/list.rb": [
         1,
         1,
         1,
@@ -70,7 +70,7 @@
         1,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/controllers/projects_controller.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/controllers/projects_controller.rb": [
         1,
         1,
         null,
@@ -97,7 +97,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/models/project.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/models/project.rb": [
         1,
         1,
         1,
@@ -108,7 +108,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/controllers/static_controller.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/controllers/static_controller.rb": [
         1,
         null,
         null,
@@ -120,7 +120,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/controllers/tasks_controller.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/controllers/tasks_controller.rb": [
         1,
         null,
         1,
@@ -137,7 +137,7 @@
         null,
         null
       ],
-      "/Users/apprentice/Desktop/basecampclone/app/models/task.rb": [
+      "/Users/rurabe/Devbootcamp/week8/basecampclone/app/models/task.rb": [
         1,
         1,
         1,
@@ -156,6 +156,6 @@
         null
       ]
     },
-    "timestamp": 1343977045
+    "timestamp": 1344016786
   }
 }
