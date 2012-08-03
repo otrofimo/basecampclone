@@ -1,7 +1,7 @@
 <h1><%= @project.title %></h1>
 <h3>This project has the following lists, or whatever:</h3>
 <div>	
-	<table class="table table-bordered table-striped">
+	<table class="table table-bordered table-striped" id="lists">
 		<tr>
 			<th>
 				Title
@@ -11,7 +11,7 @@
 	</table>
 </div>
 <div class="form-inline">
-<%=form_for [@project,@list] do |f|%>
+<%=form_for [@project,@list], :remote => true, :id => "list-form" do |f|%>
 	<%= f.text_field :title, :placeholder => "Add a list here..."%>
 	<p style="margin-top: 10px"><%= f.submit "Meh", :class => "btn btn-danger"%></p>
 <%end%>
