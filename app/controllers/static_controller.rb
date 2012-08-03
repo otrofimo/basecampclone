@@ -1,5 +1,5 @@
 class StaticController < ApplicationController
-	layout 'splash'
+	# layout 'splash'
 
 	# is a user signed in ? go to the users projects page : go to splash page 
 

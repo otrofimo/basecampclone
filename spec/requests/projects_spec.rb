@@ -1,23 +1,45 @@
 require 'spec_helper'
 
 describe "Projects" do
-	describe "#index" do
+	subject    { page             }
+	before     { visit root_path  }
+	let(:user) { Fabricate(:user) }
+
+	describe "projects#index" do
+
 		before :each do
-			visit root_path
-			click_link("Sign up")
-			page.fill_in('user_email', :with => "rurabe@gmail.com")
-			page.fill_in('user_password', :with => "example")
-			page.fill_in('user_password_confirmation', :with => "example")
-			click_button("Sign up")
+			@project = Fabricate(:project)
+			click_link("Sign in")
+			page.fill_in('user_email', :with => user.email)
+			page.fill_in('user_password', :with => user.password)
+			click_button("Sign in")			
 		end
 
-		# it "displays all the projects" do
-		# 	visit root_path
-		# 	@projects = []
-		# 	3.times { @projects << Fabricate(:project) }
-		# 	@projects.each do |project|
-		# 		page.should have_content(project.title)
-		# 	end
-		# end
+		it "displays all the projects" do
+			page.should have_content(@project.title)
+		end
+
+		it "can create a new project" do
+			page.fill_in("project_title", :with => @project.title)
+			click_button("Fine")
+			visit projects_path
+			page.should have_content(@project.title)
+		end
+
+		it "can create a new private project" do
+			page.fill_in("project_title", :with => @project.title)
+			page.check "project_clandestine"
+			click_button("Fine")
+			visit projects_path
+			page.should have_content(@project.title)
+			page.should have_content(@project.clandestine)
+		end
+
+		it "links to the appropriate list" do
+			click_link @project.title
+			page.should have_content @project.title
+			page.should have_content "This project has the following lists, or whatever:"
+		end
+
 	end
 end
