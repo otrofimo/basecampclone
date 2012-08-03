@@ -20,8 +20,12 @@ describe "Lists" do
   end
 
   describe "lists#create" do
-  	it "makes a new list"
-  		
+  	it "makes a new list" do
+  		@new_list = Fabricate(:list)
+  		visit project_path(@project)
+  		page.fill_in("list_title", :with => @new_list.title )
+  		click_button "Meh"
+  		page.should have_content @new_list.title
   	end
   end
 
