@@ -27,6 +27,15 @@ describe "Lists" do
   		click_button "Meh"
   		page.should have_content @new_list.title
   	end
+
+    it "validates a title on creation" do
+      @new_list = Fabricate(:list)
+      visit project_path(@project)
+      click_button "Meh"
+      page.should have_content ("Title can't be blank")
+    end
+
+
   end
 
   describe "lists#show" do

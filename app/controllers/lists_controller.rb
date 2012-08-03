@@ -12,7 +12,8 @@ class ListsController < ApplicationController
   	if @list.save
   		redirect_to project_path(@project)
   	else
-  		raise "You messed up fool"
+  		flash[:error] = @list.errors.full_messages
+      redirect_to project_path(@project)
   	end
   end
 end

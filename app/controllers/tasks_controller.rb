@@ -7,6 +7,7 @@ class TasksController < ApplicationController
 			@project = @list.project
 			redirect_to project_list_path(@project,@list)
 		else
+			flash[:error] = @task.errors.full_messages
 			@project = @list.project
 			redirect_to project_list_path(@project,@list)
 		end

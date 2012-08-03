@@ -41,9 +41,16 @@
     </div>
   </div>
 </div>
-<div class="container">
-		<%= yield %>
 
+<div class="container" >
+  <% if flash[:error] %>
+    <% flash[:error].each do |error|%>
+      <div class="alert alert-error">
+        <%= error%>
+      </div>
+    <% end %>
+  <% end %>
+		<%= yield %>
 </div>
 </body>
 </html>

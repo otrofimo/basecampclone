@@ -22,5 +22,10 @@ describe "Tasks" do
     	click_button "Whatever"
     	page.should have_content @new_task.body
     end
+
+    it "should not accept a blank body" do
+    	click_button "Whatever"
+    	page.should have_content "Body can't be blank"
+    end
   end
 end

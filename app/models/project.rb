@@ -4,4 +4,6 @@ class Project < ActiveRecord::Base
   has_many :tasks, :through => :lists
   attr_accessible :clandestine, :title
 
+  validates :title, :presence => true
+
 end

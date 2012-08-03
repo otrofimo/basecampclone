@@ -26,6 +26,11 @@ describe "Projects" do
 			page.should have_content(@project.title)
 		end
 
+		it "validates title on creation" do
+			click_button("Fine")
+			page.should have_content("Title can't be blank")
+		end
+
 		it "can create a new private project" do
 			page.fill_in("project_title", :with => @project.title)
 			page.check "project_clandestine"
